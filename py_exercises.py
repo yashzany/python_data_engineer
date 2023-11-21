@@ -43,6 +43,12 @@ class ex():
        for i in range(1,10):
             if (i%i)==0:
              print(i)
+    def fib():
+        x,y=0,1
+        for i in range(5):
+            print(x+y,x,y)
+            x+=1
+            y+=1
 
-f=ex.primee()
+f=ex.fib()
 f

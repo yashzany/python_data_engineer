@@ -23,15 +23,20 @@ class iccworld():
             t=t.sort_values(ascending=False).head(10)
             print(t)
     def avgrun():
+            x=int(input('enter avg run rate'))
             #a=f.groupby('player')['run_rate'].mean()
             f1=f.groupby('player')['run_rate'].mean().reset_index()
             #b=a["player"]
             #a.to_csv("C:\\Users\\YASWANTH\\OneDrive\\Documents\\pythonn\\runrate.csv")
-            a=f1["run_rate"] < 5
+            a=f1["run_rate"] < x
             k=f1.where(a).dropna().sort_values(by='run_rate',ascending=True)
 
             #(a)
             print(k)
-
-f=iccworld.avgrun()
+    def dynamcicol():
+        x=input('enter column name')
+        k=f.groupby('player')[x].sum()
+        j=k.sort_values(ascending=False).head(5)
+        print(j)
+f=iccworld.dynamcicol()
 f

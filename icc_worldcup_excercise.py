@@ -38,5 +38,6 @@ class iccworld():
         k=f.groupby('player')[x].sum()
         j=k.sort_values(ascending=False).head(5)
         print(j)
+
 f=iccworld.dynamcicol()
 f

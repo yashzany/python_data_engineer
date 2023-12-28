@@ -46,11 +46,13 @@ class fff:
         # conn.close()
 
     def newj():
-        f=pd.read_json("C:\\Users\\YASWANTH\\OneDrive\\Documents\\python\\jsonex.json")
-        print(f)
+        #with open('C:\\Users\\YASWANTH\\OneDrive\\Documents\\python\\jsonex.json',encoding="utf-8") as file1:
+         d= json.load(data)
+         #df=pd.json_normalize(d,record_path=['feeds'])
+         print(d.head())
         #k=f.to_csv("C:\\Users\\YASWANTH\\OneDrive\\Documents\\python\\jso1.csv")
         #print(pd.json_normalize(j))
-        print(f)
+
 
 obj1=fff.newj()
 obj1

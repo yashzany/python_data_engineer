@@ -27,7 +27,7 @@ f=sortv.groupby(['location','item'])['price'].sum()
 #print(f)
 #d=f.sort(['location'])
 #print(d)
-#f.to_csv('C:\\Users\\YASWANTH\\OneDrive\\Documents\\python_pro\\menu-out1.csv')
+f.to_csv('C:\\Users\\YASWANTH\\OneDrive\\Documents\\python_pro\\menu-out1.csv')
 #sales.to_sql(name='sales',con=engine,if_exists='replace',index=False)
 #k=menu_sales['year']=menu_sales['order_date'].dt.year
 #menu_sales['Year'] = menu_sales['orderdate'].dt.year
